@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVecindad - Plataforma de Participación Ciudadana</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> 
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" fill="white"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" fill="white"/>
+        </symbol>
+    </svg>
+
+    
+
+    <!-- ************************************************************************
+                                        header
+    ************************************************************************** -->
+    
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="home-btn">Home</a>
+            <h1>TechVecindad</h1>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+          
+            <ul class="nav-list">
+                <li><a href="pages/form.html"><svg  width="24" height="24"><use xlink:href="#people-circle"/></svg></a></li>
+                <li><a href="pages/forum.html"><img src="img/foro.gif" alt="Icono de Foro" style="width: 2rem;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    
+
+ <!-- ************************************************************************
+                                        main
+    ************************************************************************** -->
+    
+    <main>
+        <div class="video-container">
+            <video loop autoplay>
+                <source src="img/home.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+
+        <div class="section1">
+            <section id="descripcion">
+                <h2>Sobre Nosotros</h2>
+                <p>TechVecindad es una plataforma en línea dedicada al desarrollo de la vecindad. Utilizamos nuevas tecnologías y redes para mejorar y hacer más efectivas las soluciones que aplica el ayuntamiento. ¡Únete a nuestra comunidad hoy mismo y participa en la mejora de tu vecindario!</p>
+            </section>
+        
+            <div class="section-wrap">
+                <section id="actividades">
+                    <div class="actividad">
+                        <img src="img/pexels-divinetechygirl-1181372.jpg" alt="Actividad 1">
+                        <p>Recientemente organizamos un taller de programación para principiantes. ¡Mira algunas fotos del evento!</p>
+                    </div>
+                    <div class="actividad">
+                        <img src="img/pexels-fauxels-3184419.jpg" alt="Actividad 2">
+                        <p>Nuestro último proyecto open-source ha alcanzado 1000 descargas. ¡Gracias a todos los colaboradores!</p>
+                    </div>
+                </section>
+            </div>
+        
+            <div class="section-pair">
+                <section id="servicios">
+                    <h2>Nuestros Servicios</h2>
+                    <ul>
+                        <li>Foros de discusión</li>
+                        <li>Tutoriales y guías</li>
+                        <li>Proyectos colaborativos</li>
+                        <li>Eventos y talleres</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+
+    
+
+
+
+    <section id="signup">
+        <h2>¡Únete Ahora!</h2>
+        <form action="">
+            <input type="email" placeholder="Ingresa tu correo electrónico" required>
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+    <!-- ************************************************************************
+         footer
+    ************************************************************************** -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 TechVecindad Todos los derechos reservados.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="https://www.linkedin.com/in/jonathan-programador-dominguez">Contacto</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
