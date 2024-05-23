@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/form.css">
     <title>Formulario de Registro</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-    <div class="body-form">
+   <!--  <div class="body-form">
         <div class="container">
             <h2>Registro de Usuario</h2> 
             <form id="registroForm" method="GET" action="">
@@ -50,7 +50,54 @@
                 <button type="submit">Registrar</button>
             </form>
         </div>
-    </div>
+    </div> -->
+
+
+    <main>
+        <div class="contenedor_todo">
+
+            <div class="caja_trasera">
+                <div class="caja_traseraLogin">
+                    <h3>Ya tienes cuenta</h3>
+                    <p>Inicia sesion para entrar en la pagina</p>
+                    <button id="btn_iniciarSesion">Iniciar secion</button>
+                </div>
+                <div class="caja_traseraRegister">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesión</p>
+                    <button id="btn_registrarse">Registrarse</button>
+                </div>
+            </div>
+
+            <div class="contenedor_loginRegister">
+                <form action="" class="formulario_login">
+                    <h2>Iniciar Sesión</h2>
+                    <input id="emailLogin" type="email" placeholder="Correo Electrónico" required>
+                    <input id="passwordLogin" type="password" placeholder="Contraseña" required>
+                    <button>Ingresar</button>
+                </form>
+
+                <form action="" class="formulario_register">
+                    <h2>Registrarse</h2>
+                    <input id="name" type="text" placeholder="Nombre Completo" required>
+                    <input id="email" type="email" placeholder="Correo electrónico" required>
+                    <input id="usuario" type="text" placeholder="Usuario" required>
+                    <input id="password" type="password" placeholder="Contraseña" required>
+                    <button>Registrarse</button>
+                </form>
+            </div>
+
+
+        </div>
+    </main>
+
+
+
+
+
+
+
+
 
 <!-- 
     ***********************

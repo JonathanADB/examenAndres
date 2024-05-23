@@ -13,14 +13,21 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    height: 5rem;
+    height: 6rem;
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
+}
+
+.fecha-nav{
+    display: flex;
+   flex-direction: column;
+   gap: 1rem;
+
 }
 
 .home-btn {
@@ -32,6 +39,7 @@ header {
 .nav-list {
     list-style: none;
     display: flex;
+    gap: 1rem;
 }
 
 .nav-list li {
@@ -438,3 +446,11 @@ footer nav ul li a:hover {
         padding: 15px;
     }
 }
+
+
+
+
+
+
+
+
