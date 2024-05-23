@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foro</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
   
 </head>
 <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none"> 
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" fill="white"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" fill="white"/>
+        </symbol>
+    </svg>
 
     <header>
         <nav class="navbar">
             <a href="../index.html" class="home-btn">Home</a>
             <h1>TechVecindad</h1>
+
+            <div class="fecha-nav">
+                <div class="fecha-texto">
+                    <p class="fecha"></p>
+                </div>
+
+                <ul class="nav-list">
+                    <li><a href="./form.html"><svg  width="24" height="24"><use xlink:href="#people-circle"/></svg></a></li>
+                </ul>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
             
           
-            <ul class="nav-list">
-                <li><a href="pages/form.html"><svg  width="24" height="24"><use xlink:href="#people-circle"/></svg></a></li>
-            </ul>
+            
         </nav>
     </header>
     
@@ -67,5 +86,8 @@
             </nav>
         </div>
     </footer>
+
+
+    <script src="../scripts.js"></script>
 </body>
 </html>

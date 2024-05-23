@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    height: 100%;
     
 }
 
@@ -225,9 +226,25 @@ video {
     width: 50rem;
 }
 
+@media (max-width: 768px) {
+    .section1 {
+        width: 100vw; 
+        height: auto;
+    }
+    .section-wrap {
+        border: 1rem solid red;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 .section-pair {
-    width: calc(50% - 10px); 
-    margin-bottom: 20px; 
+    margin-top: 10rem;
+   margin-bottom: 10rem; 
+    
 }
 
 

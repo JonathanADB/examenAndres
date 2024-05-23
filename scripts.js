@@ -134,8 +134,8 @@ signupForm.addEventListener('submit', (e) =>{
     localStorage.setItem('users', JSON.stringify(Users))
     alert('Registro Exitoso!')
 
-    //redirecionar (tengo que ponerla web nuestra)
-    window.location.href = 'index.html'
+    
+    window.location.href = '../index.html'
 
  });
 

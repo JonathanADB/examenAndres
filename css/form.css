@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    height: 100%;
     
 }
 
@@ -102,7 +103,7 @@ header {
 
 
 
-/******* kljhfkjewlfbvkjlewbjgler*/
+/******* */
 main{
     position: relative; /* Permite posicionar elementos hijos de manera absoluta */
     z-index: 1; /* Coloca los elementos sobre el video */

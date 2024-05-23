@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+.d-none{
+    display: none;
+}
+header{
+    background-color: #333;
+    color: white;
+    height: 6rem;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
