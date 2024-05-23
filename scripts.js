@@ -1,7 +1,7 @@
 /* ****************************************************
                      script-fecha
 *******************************************************  */   
-const $fecha = document.querySelector('.fecha');
+const fecha = document.querySelector('.fecha');
 
 function digitalClock(){
     let f = new Date(),
