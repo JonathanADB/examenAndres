@@ -72,46 +72,43 @@ function anchoPagina(){
 function iniciarSesion(){
 
     if(window.innerWidth > 850){
-         
-   
-    formulario_register.style.display = "none";
-    contenedor_loginRegister.style.left = "10px"
-    formulario_login.style.display = "block";
-    caja_traseraRegister.style.opacity = "1";
-    caja_traseraLogin.style.opacity = "0";
+
+        formulario_register.style.display = "none";
+        contenedor_loginRegister.style.left = "10px"
+        formulario_login.style.display = "block";
+        caja_traseraRegister.style.opacity = "1";
+        caja_traseraLogin.style.opacity = "0";
     }else { 
         formulario_register.style.display = "none";
         contenedor_loginRegister.style.left = "0px"
         formulario_login.style.display = "block";
         caja_traseraRegister.style.display = "block";
         caja_traseraLogin.style.display = "none";
-
-  }
+    }
 }
 
 function register(){
 
-    if(window.innerWidth >850) { 
-    formulario_register.style.display = "block";
-    contenedor_loginRegister.style.left = "410px"
-    formulario_login.style.display = "none";
-    caja_traseraRegister.style.opacity = "0";
-    caja_traseraLogin.style.opacity = "1";
+    if(window.innerWidth > 850) { 
+        formulario_register.style.display = "block";
+        contenedor_loginRegister.style.left = "410px"
+        formulario_login.style.display = "none";
+        caja_traseraRegister.style.opacity = "0";
+        caja_traseraLogin.style.opacity = "1";
    } else {
-    formulario_register.style.display = "block";
-    contenedor_loginRegister.style.left = "0px"
-    formulario_login.style.display = "none";
-    caja_traseraRegister.style.display = "none";
-    caja_traseraLogin.style.display = "block";
-    caja_traseraLogin.style.opacity = "1";
-           
-
-   }
+        formulario_register.style.display = "block";
+        contenedor_loginRegister.style.left = "0px"
+        formulario_login.style.display = "none";
+        caja_traseraRegister.style.display = "none";
+        caja_traseraLogin.style.display = "block";
+        caja_traseraLogin.style.opacity = "1";
+    }
 }
 
 
 /*a partir de aqui es el funcionamiento del registro y la autentificacion
 lo anterior es solo animacion */
+
 /////////////////**********trabajando con registro
 const signupForm = document.querySelector(".formulario_register" )
 signupForm.addEventListener('submit', (e) =>{
@@ -134,7 +131,6 @@ signupForm.addEventListener('submit', (e) =>{
     localStorage.setItem('users', JSON.stringify(Users))
     alert('Registro Exitoso!')
 
-    
     window.location.href = '../index.html'
 
  });
@@ -157,3 +153,7 @@ loginForm.addEventListener('submit', (e) =>{
       window.location.href = '../index.html'
      }
   });
+
+
+
+

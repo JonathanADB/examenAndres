@@ -232,7 +232,7 @@ video {
         height: auto;
     }
     .section-wrap {
-        border: 1rem solid red;
+        
         width: 100vw;
         height: auto;
         display: flex;
@@ -302,35 +302,21 @@ main h2 {
 
 
 
-
-
-
-
 /* ****************************
  /      forum-styles     /
 **************************** */
 
 
-.forum{
-    height: 50rem;
-}
-.foro {
-    width: 80%;
-   
-    margin: 2rem auto;
-}
-.entrada {
+
+.message {
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
     padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
-.usuario {
-    font-weight: bold;
-    color: blue;
-}
-.mensaje {
-    margin-top: 1rem;
+.message p {
+    margin: 0;
 }
 
 .forum button {
@@ -345,11 +331,10 @@ main h2 {
     
 }
 
-
 .forum button:hover {
     background-color: #45a049;
 }
-
+ 
 
 
 

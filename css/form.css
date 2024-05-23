@@ -10,6 +10,9 @@ body {
     
 }
 
+/* ****************************
+ /      header-styles     /
+**************************** */
 header {
     background-color: #333;
     color: #fff;
@@ -99,19 +102,31 @@ header {
 }
 
 
+/* ****************************
+ /      form-styles     /
+**************************** */
 
 
 
-
-/******* */
+#video-background {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom:0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    
+}
 main{
-    position: relative; /* Permite posicionar elementos hijos de manera absoluta */
-    z-index: 1; /* Coloca los elementos sobre el video */
+    position: relative; 
+    z-index: 1; 
     width: 100%;
     padding: 20px;
+    height: 40rem;
     margin: auto;
-    margin-top: 15rem;
-    margin-bottom: 6rem;
+    margin-top: 10rem;
+   
 }
 
 .contenedor_todo{
@@ -252,11 +267,6 @@ main{
         position: relative;
     }
 }
-
-
-
-
-
 
 
 /* ****************************

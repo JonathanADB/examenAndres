@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foro</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    
   
 </head>
 <body>
@@ -26,7 +28,7 @@
                 </div>
 
                 <ul class="nav-list">
-                    <li><a href="./form.html"><svg  width="24" height="24"><use xlink:href="#people-circle"/></svg></a></li>
+                    <li><a href="./form.html"><svg  width="30" height="30"><use xlink:href="#people-circle"/></svg></a></li>
                 </ul>
             </div>
             <div class="menu-toggle" id="mobile-menu">
@@ -39,35 +41,50 @@
             
         </nav>
     </header>
-    
-    <div class="forum">
-        <div class="foro">
-            <!-- Entradas preexistentes de ejemplo -->
-            <div class="entrada">
-                <span class="usuario">Usuario1:</span>
-                <div class="mensaje">¿Qué se puede hacer para mejorar la seguridad en el parque Y? Hay reportes de actividades sospechosas durante la noche.</div>
-            </div>
-            <div class="entrada">
-                <span class="usuario">Usuario2:</span>
-                <div class="mensaje"> ¿Se tiene previsto algún proyecto para mejorar el sistema de transporte público en la zona Z? Muchos residentes dependen del autobús y sería genial contar con más frecuencias.</div>
-            </div>
-            <div class="entrada">
-                <span class="usuario">Usuario3:</span>
-                <div class="mensaje">¿Qué opinan sobre el uso de inteligencia artificial en el diseño web?</div>
-            </div>
-            <div class="entrada">
-                <span class="usuario">Usuario4:</span>
-                <div class="mensaje">Creo que la inteligencia artificial puede ser una herramienta útil para el diseño web, pero aún está en desarrollo.</div>
-            </div>
-        </div>
-    
-        
-        <div>
-            <textarea id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea><br>
-            <button>Enviar mensaje</button>
-        </div>
+    <main>
+        <h2>Espacio para pa participacion ciudadana</h2>
+        <p>Este espacio va dedicado a la escucha y aporte de cada uno de los vecinos los cuales tienen aqui una gran herramienta par dar voz a cada una de las problematicas de la vecindad </p>
 
-    </div>
+        <div class="forum">
+            <div>
+                <textarea id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje aquí..."></textarea><br>
+                <button id="enviar" disabled>Enviar mensaje</button>
+            </div>
+            <div id="messages">
+             
+            </div>
+        </div>
+    </main>
+    
+
+    <script>
+       
+        function toggleEnviarButton() {
+            const mensaje = document.getElementById('mensaje').value;
+            document.getElementById('enviar').disabled = mensaje.trim() === "";
+        }
+
+   
+        document.getElementById('mensaje').addEventListener('input', toggleEnviarButton);
+
+      
+        document.getElementById('enviar').addEventListener('click', function() {
+            const mensaje = document.getElementById('mensaje').value;
+            if (mensaje.trim() !== "") {
+                const nuevoMensaje = document.createElement('div');
+                nuevoMensaje.className = 'message';
+                const contenidoMensaje = document.createElement('p');
+                contenidoMensaje.textContent = mensaje;
+                nuevoMensaje.appendChild(contenidoMensaje);
+
+                document.getElementById('messages').appendChild(nuevoMensaje);
+                document.getElementById('mensaje').value = ""; 
+                toggleEnviarButton(); 
+            } else {
+                alert('Por favor, escribe un mensaje antes de enviar.');
+            }
+        });
+    </script>
   
 
    <!-- ************************************************************************
